@@ -1,0 +1,98 @@
+.info {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px 40px 87px 40px;
+  border-radius: 10px;
+}
+
+.info p {
+  font-size: 50px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.view-collection {
+  background-color: #ccff33;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  border-color: black;
+}
+
+.subtext {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.collection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.collection span{
+  width: 17%;
+  text-align: justify;
+}
+
+  /* Responsive Styles for Tablet and Mobile Views */
+  @media (max-width: 1024px) {
+      .main-container {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+      }
+
+      .header, .hero, .info {
+          text-align: center;
+      }
+      
+      .header .logo {
+          max-width: 150px;
+      }
+
+      .tags-container {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .main-container {
+          padding: 5px;
+      }
+.info p{
+  text-align: left;
+}
+      .hero-image {
+          width: 100%;
+          height: auto;
+      }
+
+      .tags-container button {
+          font-size: 12px;
+          padding: 8px;
+      }
+
+      .order-now {
+          width: 100%;
+          font-size: 16px;
+      }
+      .collection span{
+        width: 50%;
+        text-align: left;
+
+      }
+
+      .view-collection{
+        width:50%;
+        
+      }
+
+      .info{
+        margin: 0px -2px 0px 36px;
+      }
+  }
+  
